@@ -1,0 +1,80 @@
+.info {
+  color: $colorDefault;
+  padding: 78px 0 118px;
+  background-image: url(../../images/info-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  &__title {
+    @extend %museosans-900;
+    max-width: 694px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 43px;
+    margin: 0 auto;
+    margin-bottom: 188px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 211px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__item-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    @extend %museosans-900;
+    margin-bottom: 42px;
+    position: relative;
+    &::before {
+      content: "01";
+      @extend %roboto-900;
+      font-size: 96px;
+      line-height: 112px;
+      opacity: 0.3;
+      text-transform: uppercase;
+      color: #cfa55b;
+      position: absolute;
+      left: 0;
+      top: -120px;
+    }
+  }
+  &__item-benefits {
+    padding-left: 0;
+    margin-bottom: 2px;
+  }
+  &__item-benefit {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 42px;
+    padding-left: 50px;
+    max-width: 470px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0%;
+      background-image: url(../../images/icons/romb-icon.svg);
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__item-img {
+    position: relative;
+    top: -40px;
+    &--left {
+      left: -60px;
+    }
+    &--right {
+      right: -60px;
+    }
+  }
+  &__btn {
+    padding: 32px 66px 31px;
+  }
+}

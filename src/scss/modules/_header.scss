@@ -77,3 +77,92 @@
     }
   }
 }
+@media (max-width: 1468px) {
+  .header {
+    &__btn {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+    &__phone,
+    &__slogan {
+      display: none;
+    }
+    &__video-btn {
+      right: 10%;
+    }
+  }
+}
+@media (max-width: 845px) {
+  .header {
+    &__video-btn {
+      display: none;
+    }
+    &__menu {
+      margin-bottom: 125px;
+    }
+    &__text {
+      max-width: 100%;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__price-btn {
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 685px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    &__btn {
+      display: none;
+    }
+    &__pluses {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__plus {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    &__text {
+      margin-bottom: 100px;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 28px;
+      margin-bottom: 40px;
+      br {
+        display: none;
+      }
+    }
+    &__text-btn {
+      font-size: 14px;
+      line-height: 18px;
+      padding: 20px;
+    }
+    &__plus {
+      font-size: 14px;
+      line-height: 14px;
+      max-width: 100%;
+    }
+  }
+  .logo__img {
+    max-width: 75%;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    &__text-btn {
+      padding: 10px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}

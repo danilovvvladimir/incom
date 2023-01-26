@@ -1,0 +1,79 @@
+.header {
+  padding: 53px 0 141px 0;
+  background-image: url(../../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  // background-size: cover;
+  background-position: center center;
+  // min-height: 989px;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 179px;
+  }
+  &__slogan {
+    max-width: 286px;
+  }
+  &__phone {
+    @extend %museosans-700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+  }
+  &__btn {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 15px 25px 16px;
+  }
+  &__hamburger {
+    cursor: pointer;
+    margin-right: 18px;
+  }
+  &__text {
+    max-width: 630px;
+    margin-bottom: 156px;
+  }
+  &__text-btn {
+    padding: 31px 45px 30px 42px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__title {
+    @extend %museosans-900;
+    text-align: left;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 83px;
+  }
+  &__pluses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__video-btn {
+    position: absolute;
+    right: 410px;
+    top: 330px;
+    cursor: pointer;
+  }
+  &__plus {
+    @extend %roboto-400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 50px;
+    position: relative;
+    max-width: 316px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      background-image: url(../../images/icons/circle-icon.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

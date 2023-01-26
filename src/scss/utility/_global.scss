@@ -1,8 +1,47 @@
 body {
+  @extend %museosans-500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1290px;
+  max-width: 1350px;
+}
+
+.btn {
+  display: inline-block;
+  @extend %museosans-700;
+  color: #fff;
+  background: $colorAccent;
+  box-shadow: 0px 0px 60px rgba(255, 194, 86, 0.5);
+  border-radius: 5px;
+  &--reverse {
+    border: 2px solid #ffc256;
+    filter: drop-shadow(0px 0px 30px #ffc256);
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffc256;
+  }
+  &--active {
+    font-weight: 900;
+
+    text-transform: uppercase;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100% + 14px);
+      height: calc(100% + 14px);
+      left: -7px;
+      top: -7px;
+      border-radius: 5px;
+      border: 1px solid #cfa55b;
+    }
+  }
+}
+.accent {
+  color: $colorAccent;
 }

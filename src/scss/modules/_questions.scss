@@ -1,0 +1,37 @@
+.questions {
+  padding: 98px 0 104px;
+  background-image: url(../../images/questions-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  &__title {
+    @extend %museosans-900;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    margin-bottom: 44px;
+    max-width: 715px;
+  }
+  &__form {
+    display: flex;
+  }
+  &__input {
+    margin-right: 27px;
+    padding: 25px 40px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #787878;
+    border: none;
+    box-shadow: 0px 4px 20px rgba(66, 66, 66, 0.3);
+    border-radius: 10px;
+    width: 553px;
+  }
+  &__btn {
+    border: none;
+    padding: 26px 38px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

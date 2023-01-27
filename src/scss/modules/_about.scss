@@ -1,0 +1,92 @@
+.about {
+  padding: 80px 0 108px;
+  background-image: url(../../images/about-bg.jpg);
+  background-repeat: no-repeat;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    &::before {
+      content: "";
+      position: absolute;
+      border: 3px solid #cfa55b;
+      filter: drop-shadow(0px 4px 30px rgba(207, 165, 91, 0.5));
+      border-radius: 10px;
+      width: 425px;
+      height: 558px;
+      background-color: transparent;
+      z-index: 1;
+      right: 15px;
+      top: 15px;
+    }
+  }
+  &__title {
+    padding-top: 111px;
+    @extend %museosans-900;
+    font-size: 36px;
+    line-height: 43px;
+    max-width: 477px;
+    margin-bottom: 53px;
+  }
+  &__text {
+    @extend %museosans-700;
+    margin-bottom: 29px;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 638px;
+  }
+  &__card {
+    background-color: #fff;
+    color: $colorDefault;
+    max-width: 447px;
+    box-shadow: 0px 4px 50px rgba(207, 165, 91, 0.5);
+    border-radius: 10px;
+    padding: 36px 34px 44px 34px;
+    margin-right: 37px;
+    position: relative;
+    z-index: 3;
+  }
+  &__card-title {
+    @extend %museosans-900;
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 323px;
+    margin-bottom: 23px;
+  }
+  &__card-subtitle {
+    margin-bottom: 37px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__card-benefits {
+    padding-left: 0;
+    margin-bottom: 54px !important;
+  }
+  &__card-benefit {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 25px;
+    padding-left: 50px;
+    position: relative;
+    .accent {
+      font-weight: 900;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../../images/icons/romb-mod-icon.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__card-btn {
+    padding: 25px 94px;
+    margin-bottom: 10px;
+  }
+}

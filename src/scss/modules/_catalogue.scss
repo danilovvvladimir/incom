@@ -1,0 +1,106 @@
+.catalogue {
+  color: $colorDefault;
+  padding: 85px 92px;
+  background-image: url(../../images/catalogue-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  min-height: 1193px;
+  &__title {
+    @extend %roboto-900;
+    text-align: center;
+    margin-bottom: 57px;
+  }
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__btn + .catalogue__btn {
+    margin-left: 38px;
+  }
+  &__btn {
+    width: 294px;
+    text-align: center;
+    @extend %museosans-900;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #cfa55b;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #cfa55b;
+    // padding: 23px 43px;
+    padding: 25px 0;
+    box-shadow: none;
+    cursor: pointer;
+    &--active {
+      color: #fff;
+      background-color: #cfa55b;
+      box-shadow: 0px 4px 20px rgba(207, 165, 91, 0.5);
+    }
+  }
+  &-slide__img {
+    margin: 0 auto;
+  }
+  &-slide__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    @extend %museosans-700;
+    margin-bottom: 47px;
+  }
+  &-slide__name {
+    @extend %museosans-900;
+    font-size: 30px;
+    line-height: 36px;
+    display: block;
+  }
+  &-slide__img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  &-slide__info-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-slide-info-item {
+    text-align: left;
+    color: #8c8c8c;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  &-slide-info-item + .catalogue-slide-info-item {
+    margin-left: 107px;
+  }
+  &-slide__info-numbers {
+    font-size: 30px;
+    @extend %museosans-700;
+    line-height: 36px;
+    display: block;
+  }
+}
+
+.slider {
+  display: none;
+  &--active {
+    display: block;
+  }
+}
+.catalogue__swipebtn {
+  position: absolute;
+  top: 40%;
+  width: 68px;
+  height: 68px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+.swiper-button-left {
+  left: 0px;
+}
+.swiper-button-right {
+  right: 0px;
+}
